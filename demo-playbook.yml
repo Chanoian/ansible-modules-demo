@@ -1,0 +1,25 @@
+---
+  - name: Demo Playbook
+    hosts: localhost
+    connection: local
+
+    tasks:
+      - name: Ansible Monitoring Modules Counter
+        ansible_modules_counter: 
+          modules_type: "inventory"
+        register: monitoring_module_return
+      
+      - name: Print Out Module Return
+        debug:
+          msg: "{{monitoring_module_return}}"
+
+      - name: Ansible Cloud Modules Counter
+        ansible_modules_counter: 
+          modules_type: "cloud"
+        register: cloud_module_return
+      
+      - name: Print Out Module Return
+        debug:
+          msg: "{{cloud_module_return}}"
+        
+        
