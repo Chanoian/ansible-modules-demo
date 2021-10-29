@@ -1,0 +1,15 @@
+---
+  - name: Demo Playbook
+    hosts: localhost
+    connection: local
+
+    tasks:
+      - name: Ansible Modules Counter
+        ansible_modules_counter: 
+          module_type: "monitoring"
+        register: module_return
+      
+      - name: Print Out Module Return
+        debug:
+          msg: "{{module_return}}"
+        

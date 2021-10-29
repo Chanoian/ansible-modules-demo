@@ -1,0 +1,15 @@
+ansible==2.9.6
+beautifulsoup4==4.10.0
+bs4==0.0.1
+certifi==2021.10.8
+cffi==1.15.0
+charset-normalizer==2.0.7
+cryptography==35.0.0
+idna==3.3
+Jinja2==3.0.2
+MarkupSafe==2.0.1
+pycparser==2.20
+PyYAML==6.0
+requests==2.26.0
+soupsieve==2.2.1
+urllib3==1.26.7
