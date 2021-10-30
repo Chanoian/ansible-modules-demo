@@ -6,7 +6,7 @@
     tasks:
       - name: Ansible All Modules Counter
         ansible_modules_counter: 
-          modules_type: "all"
+          modules_type: all
         register: monitoring_module_return
       
       - name: Print Out Module Return
@@ -15,7 +15,7 @@
 
       - name: Ansible Cloud Modules Counter
         ansible_modules_counter: 
-          modules_type: "clouds"
+          modules_type: clouds
         register: cloud_module_return
       
       - name: Print Out Module Return

@@ -13,4 +13,8 @@ name: Ansible All Modules Counter
         ansible_modules_counter: 
           modules_type: cloud
         register: monitoring_module_return
+        
+      - name: Print Out Module Return
+        debug:
+          msg: "{{monitoring_module_return}}"
 ```
