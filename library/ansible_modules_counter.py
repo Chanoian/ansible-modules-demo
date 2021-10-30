@@ -44,11 +44,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
-#  args=dict(
-#             name=dict(type='str', required=True),
-#             sleep=dict(type='int', required=False),
-#             enabled=dict(type='bool', default=True),
-#             api_token=dict(type='str', no_log=True),
-#             state=dict(type='str', choices=['started', 'stopped', 'reloaded', 'restarted']))

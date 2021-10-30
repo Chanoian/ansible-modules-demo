@@ -4,9 +4,9 @@
     connection: local
 
     tasks:
-      - name: Ansible Monitoring Modules Counter
+      - name: Ansible All Modules Counter
         ansible_modules_counter: 
-          modules_type: "inventory"
+          modules_type: "all"
         register: monitoring_module_return
       
       - name: Print Out Module Return
@@ -15,7 +15,7 @@
 
       - name: Ansible Cloud Modules Counter
         ansible_modules_counter: 
-          modules_type: "cloud"
+          modules_type: "clouds"
         register: cloud_module_return
       
       - name: Print Out Module Return
@@ -23,3 +23,4 @@
           msg: "{{cloud_module_return}}"
         
         
+  
