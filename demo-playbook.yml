@@ -13,14 +13,14 @@
         debug:
           msg: "{{cloud_modules_counter}}"
 
-      - name: Count Windows modules
+      - name: Count Command modules
         ansible_modules_counter: 
-          modules_type: windows
-        register: windows_modules_counter
+          modules_type: commands
+        register: command_modules_counter
       
-      - name: Print Out Windows Modules Count
+      - name: Print Out Command Modules Count
         debug:
-          msg: "{{windows_modules_counter}}"
+          msg: "{{command_modules_counter}}"
         
         
   
