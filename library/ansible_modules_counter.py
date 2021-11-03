@@ -36,7 +36,7 @@ def main():
             for litag in ultag.find_all('li'):
                 counter+=1
         # remove the note from the count
-        counter = counter - 1
+        counter = counter - 1 
         module.exit_json(changed = False, module_counter=counter)
     except Exception as e:
         module.fail_json(msg = "Make Sure The Modules Type {} is Correct !".format(modules_type))

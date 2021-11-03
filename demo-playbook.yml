@@ -4,23 +4,23 @@
     connection: local
 
     tasks:
-      - name: Ansible All Modules Counter
+      - name: Count Cloud modules
         ansible_modules_counter: 
-          modules_type: all
-        register: monitoring_module_return
+          modules_type: cloud
+        register: cloud_modules_counter
       
-      - name: Print Out Module Return
+      - name: Print Out Cloud Module Count
         debug:
-          msg: "{{monitoring_module_return}}"
+          msg: "{{cloud_modules_counter}}"
 
-      - name: Ansible Cloud Modules Counter
+      - name: Count Windows modules
         ansible_modules_counter: 
-          modules_type: clouds
-        register: cloud_module_return
+          modules_type: windows
+        register: windows_modules_counter
       
-      - name: Print Out Module Return
+      - name: Print Out Windows Modules Count
         debug:
-          msg: "{{cloud_module_return}}"
+          msg: "{{windows_modules_counter}}"
         
         
   
